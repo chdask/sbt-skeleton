@@ -7,19 +7,21 @@ This is a multi-module project having 2 modules. Module2 dependes on Module1. Al
 
 ### Directory structure
 
-##### The project folder
-project folder is not relevant to the source code. It's an sbt config folder to hold the build configuration, plugins, etc.
+##### The project directory
+The project directory is not containing the application source code. It's an sbt config folder to hold the build configuration, plugins, etc.
+
+In this example it contains:
 
 * `Build.scala` must be in the project folder.
 * `plugins.sbt` contains the plugins used as part of this skeleton. 
 
-Project folder is located in the base directory:
+Project dir is located in the base directory:
 ```
 <base_dir>/project
 ```
 
 ##### The subProjects
-* The SBT projects follow the Maven directory structure. 
+* The SBT projects follow the Maven directory structure (http://www.scala-sbt.org/release/tutorial/Directories.html). 
 * In our case the parent does not containing any source code but common build configuration and project structure definition.
 * The subProjects are following the common directory structure but no build definition files. We handle their build from the parent. So the subProjects (or modules) live in their own directory:
 
