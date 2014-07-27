@@ -1,5 +1,5 @@
-sbt-skeleton
-============
+sbt-skeleton with build.sbt
+============================
 
 sbt skeleton
 
