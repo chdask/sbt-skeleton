@@ -2,6 +2,8 @@ package sampleproject
 
 import sbt._
 import Keys._
+import sbtassembly.Plugin._
+import AssemblyKeys._
 
 /**
  * Multi-project build configuration
@@ -13,10 +15,14 @@ object SampleProjectBuild extends Build {
   val testDependencies = List("org.scalatest" %% "scalatest" % "1.9.1" % "test") //global group of test deps
 
   //removed: ++ assemblySettings ++ scalariformSettings
-  val sharedSettings = Project.defaultSettings ++ Seq(
+  val sharedSettings = Project.defaultSettings ++ assemblySettings ++ Seq(
     organization := "com.chdask",
-    scalaVersion := "2.10.4"
+    scalaVersion := "2.10.4",
+
+    scalacOptions ++= Seq("-unchecked", "-deprecation")
+
   )
+
 
   def module(name: String) = {
     val id = "sampleproject-%s".format(name)
