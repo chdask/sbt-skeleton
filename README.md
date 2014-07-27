@@ -3,9 +3,10 @@ sbt-skeleton
 
 This is an sbt-skeleton project.
 It consists of 3 branches: 
-1. master: contains a basic sbt configuration using a build.sbt file
-2. options/withSBT: using .sbt files to demonstrate a multi-project setup
-3. options/withScala: using Build.scala to demonstrate a multi-project setup
+
+* master: contains a basic sbt configuration using a build.sbt file
+* options/withSBT: using .sbt files to demonstrate a multi-project setup
+* options/withScala: using Build.scala to demonstrate a multi-project setup
 
 ### Basic SBT commands
 - clean
