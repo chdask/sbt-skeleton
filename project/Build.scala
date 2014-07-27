@@ -3,10 +3,9 @@ package sampleproject
 import sbt._
 import Keys._
 import sbtassembly.Plugin._
-import AssemblyKeys._
 
 /**
- * Multi-project build configuration
+ * Multi-project build configuration with assemply plugin.
  */
 object SampleProjectBuild extends Build {
 
