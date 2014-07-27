@@ -33,3 +33,17 @@ Project dir is located in the base directory:
 ```
 <base_dir>/project/Build.scala
 ```
+* In Build.scala we define the `sharedSettings` and dependencies to be used by our modules.
+* The parent project definition where we define the subProjects
+* The subProject definitions (settings & dependencies)
+* A module function to be used to initialize a Project by also having a name prefix (which is optional)
+
+### sbt assembly
+We use the assembly plugin to generate jar with dependencies. 
+In the base directory do:
+
+> $ sbt assembly
+
+This will generate jars with dependecies for all the modules in their `target` folder. 
+
+See also: https://github.com/sbt/sbt-assembly
