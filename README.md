@@ -36,3 +36,6 @@ In order to use the intelliJ you can either add it to your global SBT plugins or
 
 ### TODO
 * publish & deploy
+
+### References
+http://www.scala-sbt.org/release/tutorial/index.html
