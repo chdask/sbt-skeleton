@@ -24,19 +24,20 @@ It consists of 3 branches:
 ### Multi-module project in SBT
 Using sbt with a multi-module project, by default it uses the parent project eg. sampleproject
 You can navigate among children projects eg. sampleproject-module1: 
-> sbt
+> $ sbt
 
 > project  sampleproject-module1
 
 You can see the versions of the projects:
-> sbt
+> $ sbt
 
 > show versions 
 
 ### Intellij
 To transform the project to intelliJ project, you require the idea plugin for sbt. 
 Then type:
-$ sbt gen-idea 
+
+> $ sbt gen-idea 
 
 In order to use the intelliJ you can either add it to your global SBT plugins or to the project specific plugins as follows:
 - sbt gen-idea - as plugin to sbt set to local environment: `~/.sbt/0.13/plugins/build.sbt`
