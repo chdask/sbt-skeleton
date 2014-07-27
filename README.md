@@ -17,10 +17,12 @@ It consists of 3 branches:
 Using sbt with a multi-module project, by default it uses the parent project eg. sampleproject
 You can navigate among children projects eg. sampleproject-module1: 
 > sbt
+
 > project  sampleproject-module1
 
 You can see the versions of the projects:
 > sbt
+
 > show versions 
 
 ### Intellij
