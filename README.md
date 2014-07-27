@@ -1,5 +1,3 @@
-sbt-skeleton
-============
+sbt-skeleton using Build.scala
+====================================
 
-sbt skeleton
-test
